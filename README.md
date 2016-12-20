@@ -6,7 +6,7 @@ Simple and easy way for animate a elements when your page scroll.
 # Basic Usage
 
 ###Include the stylesheet on your document's ``<head>``
-Scroll Animated use a style with animations based in [Animate.CSS](href="https://daneden.github.io/animate.css/)
+Scroll Animated use a style with animations based in [Animate.CSS](https://daneden.github.io/animate.css/)
 
 ```html
 <head>
