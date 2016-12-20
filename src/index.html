@@ -141,11 +141,36 @@
 	</footer>
 	<script src="js/scrollAnimated.js"></script>
 	<script>
-		var fadeIn = new ScrollAnimated('.box-fadeIn','fadeIn', 0.5, 1);
-		var fadeInUp = new ScrollAnimated('.box-fadeInUp','fadeInUp', 1, 2);
-		var fadeInDown = new ScrollAnimated('.box-fadeInDown','fadeInDown', 1.5, 0);
-		var fadeInLeft = new ScrollAnimated('.box-fadeInLeft','fadeInLeft', 2, 2);
-		var fadeInRight = new ScrollAnimated('.box-fadeInRight','fadeInRight', 2.5, 1);
+		var fadeIn = new ScrollAnimated({
+			element: '.box-fadeIn',
+			effect: 'fadeInUp',
+			time: 0.5,
+			delay: 1
+		});
+		var fadeInUp = new ScrollAnimated({
+			element: '.box-fadeInUp',
+			effect: 'fadeInUp',
+			time: 0.5,
+			delay: 1.5
+		});
+		var fadeInDown = new ScrollAnimated({
+			element: '.box-fadeInDown',
+			effect: 'fadeInDown',
+			time: 0.5,
+			delay: 2
+		});
+		var fadeInLeft = new ScrollAnimated({
+			element: '.box-fadeInLeft',
+			effect: 'fadeInLeft',
+			time: 0.5,
+			delay: 2.5
+		});
+		var fadeInRight = new ScrollAnimated({
+			element: '.box-fadeInRight',
+			effect: 'fadeInRight',
+			time: 0.5,
+			delay: 3
+		});
 	</script>
 </body>
 </html>

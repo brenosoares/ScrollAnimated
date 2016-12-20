@@ -5,15 +5,16 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var ScrollAnimated = function () {
-	function ScrollAnimated(element, effect, duration, delay) {
+	function ScrollAnimated(el) {
 		var _this = this;
 
 		_classCallCheck(this, ScrollAnimated);
 
-		this.element = element;
-		this.effect = effect;
-		this.duration = duration;
-		this.delay = delay;
+		this.element = el.element;
+		this.effect = el.effect;
+		this.duration = el.duration;
+		this.delay = el.delay;
+
 		// VERIFY IF ELEMENT HAS IN DOCUMENT
 		if (document.querySelector(this.element)) {
 			this.elementSelect = document.querySelector(this.element);

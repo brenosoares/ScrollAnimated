@@ -1,10 +1,11 @@
 class ScrollAnimated{
 
-	constructor(element, effect, duration, delay){
-		this.element = element;
-		this.effect = effect;
-		this.duration = duration;
-		this.delay = delay;
+	constructor(el){
+		this.element = el.element;
+		this.effect = el.effect;
+		this.duration = el.duration;
+		this.delay = el.delay;
+
 		// VERIFY IF ELEMENT HAS IN DOCUMENT
 		if (document.querySelector(this.element)) {
 			this.elementSelect = document.querySelector(this.element);

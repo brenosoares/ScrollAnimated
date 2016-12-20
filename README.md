@@ -23,7 +23,12 @@ Scroll Animated use a style with animations based in [Animate.CSS](https://daned
 ###Initialize Scroll Animated
 
 ```javascript
-var myElement = new ScrollAnimated('.myElement', 'effect', duration);
+var myScroll = new ScrollAnimated({
+			element: '.myElemt',
+			effect: 'myEffect',
+			time: 0.5,
+			delay: 1
+		});
 ```
 
 
