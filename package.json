@@ -1,0 +1,31 @@
+{
+  "name": "scrollanimated",
+  "version": "0.1.0",
+  "description": "Simple plugin to animated elements when page scroll",
+  "main": "index.html",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+  	"browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect-php": "0.0.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-babel": "^6.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenosoares/ScrollAnimated.git"
+  },
+  "author": "Breno Soares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brenosoares/ScrollAnimated/issues"
+  },
+  "homepage": "https://github.com/brenosoares/ScrollAnimated#readme"
+}
