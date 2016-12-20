@@ -7,7 +7,7 @@ Simple and easy way for animate a elements when your page scroll.
 
 1. Include the stylesheet on your document's ``<head>``
 
-```
+```html
 <head>
   <link rel="stylesheet" href="scrollAnimated.css">
 </head>
@@ -15,7 +15,7 @@ Simple and easy way for animate a elements when your page scroll.
 
 2. Include the javascript on your document's
 
-```
+```html
 <script src="/scrollAnimated.js" type="text/javascript"></script>
 ```
 
