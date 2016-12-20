@@ -4,6 +4,75 @@
 	<meta charset="UTF-8">
 	<title>Scroll Animated</title>
 	<link rel="stylesheet" href="css/scrollAnimated.css">
+	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+	<style>
+		html{
+			font-family: 'Hind', sans-serif;
+		}
+		header{
+			background-color: #eee;
+			color: #333;
+			line-height: 1;
+			margin: 0 0 50px;
+			padding: 8rem 1rem;
+			text-align: center;
+		}
+		footer{
+			padding: 5rem 1rem;
+			text-align: center;
+		}
+		h1, h2{
+			margin: 1rem 0;
+			text-transform: uppercase;
+		}
+		h2{
+			border-bottom: 1px solid #eee;
+			margin-top: 2rem;
+			font-weight: 700;
+		}
+		p{
+			font-size: 1rem;
+			font-weight: 500;
+			margin: 0;
+		}
+		a{
+			color: #333;
+			font-weight:  700;
+		}
+		main{
+			box-sizing: border-box;
+			margin: 0 auto;
+			max-width: 1280px;
+			padding: 0 1rem;
+			width: 100%;
+		}
+		pre, code{
+			background-color: #eee;
+			white-space: normal;
+		}
+		pre{
+			padding: 20px;
+		}
+		.demo{
+			display: flex;
+			flex-flow:  row wrap;
+			justify-content: space-between;
+			align-content: center;
+			align-items: stretch;
+		}
+		.demo h2{
+			width: 100%;
+		}
+		.box{
+			background-color: #eee;
+			border:  1px solid gray;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			padding: 20px 10px;
+			text-align: center;
+			width: 15%;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -11,11 +80,72 @@
 		<p>Simple and easy way for animate a elements when your page scroll.</p>
 	</header>
 	<main>
-	<h2>Installation</h2>
+		<section>
+
+			<h2>Usage</h2>
+			<p>Include the stylesheet on your document's <code>&lt;head&gt;</code>
+				<br>
+				Scroll Animated use a style with animations based in <a href="https://daneden.github.io/animate.css/">Animate.CSS</a>
+				<pre>
+					<code>
+						<head>
+							&lt;link rel="stylesheet" href="scrollAnimated.css"&gt;
+						</head>
+					</code>
+				</pre>
+			</p>
+			<p>Include the javascript on your document’s
+				<pre>
+					<code>
+						&lt;script src="/scrollAnimated.js" type="text/javascript"&gt;&lt;/script&gt;
+					</code>
+				</pre>
+			</p>
+			<p>Initialize Scroll Animated
+				<pre>
+					<code>
+						var myElement = new ScrollAnimated('.myElement', 'effect', duration, delay);
+					</code>
+				</pre>
+			</p>
+
+		</section>
+		<section class="demo">
+
+			<h2>Demo</h2>
+			<div class="box box-fadeIn">fadeIn</div>
+			<div class="box box-fadeInUp">fadeInUp</div>
+			<div class="box box-fadeInDown">fadeDown</div>
+			<div class="box box-fadeInLeft">fadeLeft</div>
+			<div class="box box-fadeInRight">fadeRight</div>
+
+		</section>
+
+		<section>
+
+			<h2>License</h2>
+			<p>Scroll Animated is licensed under the MIT license. <a href="http://opensource.org/licenses/MIT">(http://opensource.org/licenses/MIT)</a></p>
+
+		</section>
+
+		<section>
+
+			<h2>Contributing</h2>
+			<p>Pull requests are the way to go here. All changes should be committed to src/ files. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a <a href="http://codepen.io/">pen</a>. That last one is important.</p>
+
+		</section>
 
 	</main>
 	<footer>
-		Designed with
+		Designed with <3 by <a href="mailto:contato@brenosoares.com.br?subject=feedback" "email me">Breno Soares</a>
 	</footer>
+	<script src="js/scrollAnimated.js"></script>
+	<script>
+		var fadeIn = new ScrollAnimated('.box-fadeIn','fadeIn', 0.5, 1);
+		var fadeInUp = new ScrollAnimated('.box-fadeInUp','fadeInUp', 1, 2);
+		var fadeInDown = new ScrollAnimated('.box-fadeInDown','fadeInDown', 1.5, 0);
+		var fadeInLeft = new ScrollAnimated('.box-fadeInLeft','fadeInLeft', 2, 2);
+		var fadeInRight = new ScrollAnimated('.box-fadeInRight','fadeInRight', 2.5, 1);
+	</script>
 </body>
 </html>

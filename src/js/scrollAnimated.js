@@ -1,9 +1,10 @@
 class ScrollAnimated{
 
-	constructor(element, effect, duration){
+	constructor(element, effect, duration, delay){
 		this.element = element;
 		this.effect = effect;
 		this.duration = duration;
+		this.delay = delay;
 		// VERIFY IF ELEMENT HAS IN DOCUMENT
 		if (document.querySelector(this.element)) {
 			this.elementSelect = document.querySelector(this.element);
@@ -21,8 +22,11 @@ class ScrollAnimated{
 		}
 	}
 	preAnimation(){
+		let self = this;
 		Array.from(this.elementSelectAll).forEach(el => {
 			el.classList.add('animated');
+			el.style.animationDelay = self.delay+"s";
+			el.style.animationDuration = self.duration+"s";
 			el.style.opacity = 0;
 		});
 
@@ -41,8 +45,3 @@ class ScrollAnimated{
 	}
 
 }
-
-	var obj = new ScrollAnimated('.diferenciais__item', 'fadeInUp', 300);
-	var objs = new ScrollAnimated('.portaria__texto', 'fadeInLeft', 300);
-	var objss = new ScrollAnimated('.portaria__image', 'fadeInRight', 300);
-	var objsss = new ScrollAnimated('.clientes__item', 'fadeInUp', 300);

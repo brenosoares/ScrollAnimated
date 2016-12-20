@@ -5,7 +5,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var ScrollAnimated = function () {
-	function ScrollAnimated(element, effect, duration) {
+	function ScrollAnimated(element, effect, duration, delay) {
 		var _this = this;
 
 		_classCallCheck(this, ScrollAnimated);
@@ -13,6 +13,7 @@ var ScrollAnimated = function () {
 		this.element = element;
 		this.effect = effect;
 		this.duration = duration;
+		this.delay = delay;
 		// VERIFY IF ELEMENT HAS IN DOCUMENT
 		if (document.querySelector(this.element)) {
 			this.elementSelect = document.querySelector(this.element);
@@ -34,8 +35,11 @@ var ScrollAnimated = function () {
 	_createClass(ScrollAnimated, [{
 		key: 'preAnimation',
 		value: function preAnimation() {
+			var self = this;
 			Array.from(this.elementSelectAll).forEach(function (el) {
 				el.classList.add('animated');
+				el.style.animationDelay = self.delay + "s";
+				el.style.animationDuration = self.duration + "s";
 				el.style.opacity = 0;
 			});
 		}
@@ -56,8 +60,3 @@ var ScrollAnimated = function () {
 
 	return ScrollAnimated;
 }();
-
-var obj = new ScrollAnimated('.diferenciais__item', 'fadeInUp', 300);
-var objs = new ScrollAnimated('.portaria__texto', 'fadeInLeft', 300);
-var objss = new ScrollAnimated('.portaria__image', 'fadeInRight', 300);
-var objsss = new ScrollAnimated('.clientes__item', 'fadeInUp', 300);
