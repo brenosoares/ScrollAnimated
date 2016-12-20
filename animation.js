@@ -42,7 +42,7 @@ class ScrollAnimated{
 
 }
 
-	var obj = new ScrollAnimeted('.diferenciais__item', 'fadeInUp', 300);
-	var objs = new ScrollAnimeted('.portaria__texto', 'fadeInLeft', 300);
-	var objss = new ScrollAnimeted('.portaria__image', 'fadeInRight', 300);
-	var objsss = new ScrollAnimeted('.clientes__item', 'fadeInUp', 300);
+	var obj = new ScrollAnimated('.diferenciais__item', 'fadeInUp', 300);
+	var objs = new ScrollAnimated('.portaria__texto', 'fadeInLeft', 300);
+	var objss = new ScrollAnimated('.portaria__image', 'fadeInRight', 300);
+	var objsss = new ScrollAnimated('.clientes__item', 'fadeInUp', 300);
