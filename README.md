@@ -6,7 +6,7 @@ Simple and easy way for animate a elements when your page scroll.
 # Basic Usage
 
 ###Include the stylesheet on your document's ``<head>``
-Scroll Animated use a style with animations based in [Animate.CSS](href="https://daneden.github.io/animate.css/)
+Scroll Animated use a style with animations based in [Animate.CSS](https://daneden.github.io/animate.css/)
 
 ```html
 <head>
@@ -44,11 +44,6 @@ var myElement = new ScrollAnimated('.myElement', 'effect', duration);
 * `bounceInLeft`
 * `bounceInRight`
 * `bounceInUp`
-* `bounceOut`
-* `bounceOutDown`
-* `bounceOutLeft`
-* `bounceOutRight`
-* `bounceOutUp`
 * `fadeIn`
 * `fadeInDown`
 * `fadeInDownBig`
@@ -58,52 +53,25 @@ var myElement = new ScrollAnimated('.myElement', 'effect', duration);
 * `fadeInRightBig`
 * `fadeInUp`
 * `fadeInUpBig`
-* `fadeOut`
-* `fadeOutDown`
-* `fadeOutDownBig`
-* `fadeOutLeft`
-* `fadeOutLeftBig`
-* `fadeOutRight`
-* `fadeOutRightBig`
-* `fadeOutUp`
-* `fadeOutUpBig`
 * `flipInX`
 * `flipInY`
-* `flipOutX`
-* `flipOutY`
 * `lightSpeedIn`
-* `lightSpeedOut`
 * `rotateIn`
 * `rotateInDownLeft`
 * `rotateInDownRight`
 * `rotateInUpLeft`
 * `rotateInUpRight`
-* `rotateOut`
-* `rotateOutDownLeft`
-* `rotateOutDownRight`
-* `rotateOutUpLeft`
-* `rotateOutUpRight`
 * `hinge`
 * `rollIn`
-* `rollOut`
 * `zoomIn`
 * `zoomInDown`
 * `zoomInLeft`
 * `zoomInRight`
 * `zoomInUp`
-* `zoomOut`
-* `zoomOutDown`
-* `zoomOutLeft`
-* `zoomOutRight`
-* `zoomOutUp`
 * `slideInDown`
 * `slideInLeft`
 * `slideInRight`
 * `slideInUp`
-* `slideOutDown`
-* `slideOutLeft`
-* `slideOutRight`
-* `slideOutUp`
 
 
 ## License
